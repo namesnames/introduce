@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+}
+#header{
+    width:100%;
+    background-color:rgb(15, 13, 13);
+    border-style: ridge;
+    color:beige;
+    text-align: left;
+    
+    
+ }
+ body{
+     background-color:beige;
+ }
+.container{
+    width:80%;
+    margin:0 auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+
+}
+.menubar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menubar ul li {
+    margin: 10px;
+    padding: 10px;
+    
+}
+.menubar ul li a{
+    color:beige;
+}
+.main{
+    display:flex;
+    flex-direction: row;
+    margin-top:60px;
+}
+.mainleft{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    border-style: solid;
+    border-width:5px;
+}
+.left2{
+    border-style: solid;
+    border-width:5px;
+    padding-top:50px;
+    padding-bottom: 109px;
+}
+.left { 
+    --borderWidth: 5px; 
+     
+    position: relative; 
+    border-radius: var(--borderWidth);
+} 
+.left:after { 
+    content: ''; 
+    position: absolute; 
+    top: calc(-1 * var(--borderWidth)); 
+    left: calc(-1 * var(--borderWidth)); 
+    height: calc(100% + var(--borderWidth) * 2);
+ width: calc(100% + var(--borderWidth) * 2); 
+ background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); 
+ border-radius: calc(1.5 * var(--borderWidth)); z-index: -1; 
+ animation: animatedgradient 8s ease alternate infinite; 
+ background-size: 300% 300%; } 
+
+ @keyframes animatedgradient { 
+     0% { background-position: 0% 50%; } 
+     50% { background-position: 100% 50%; } 
+     100% { background-position: 0% 50%; } 
+    }
+.left2 { 
+        --borderWidth: 5px; 
+         
+        position: relative; 
+        border-radius: var(--borderWidth);
+    } 
+.left2:after { 
+        content: ''; 
+        position: absolute; 
+        top: calc(-1 * var(--borderWidth)); 
+        left: calc(-1 * var(--borderWidth)); 
+        height: calc(100% + var(--borderWidth) * 2);
+     width: calc(100% + var(--borderWidth) * 2); 
+     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); 
+     border-radius: calc(1.5 * var(--borderWidth)); z-index: -1; 
+     animation: animatedgradient 10s ease alternate infinite; 
+     background-size: 300% 300%; } 
+    
+     @keyframes animatedgradient { 
+         0% { background-position: 0% 50%; } 
+         50% { background-position: 100% 50%; } 
+         100% { background-position: 0% 50%; } 
+        }
+    
+
